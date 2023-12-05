@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+{% block title %}About |{% endblock title %}
+{% block style %}
+<style>
+    *{
+      font-size:20px;
+    }
+    body{
+    
+     background-image: url("https://img.freepik.com/free-vector/abstract-classic-blue-wallpaper_23-2148430346.jpg");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+    }
+    h1{
+      text-align:center;
+    }
+    #container{
+     
+      /* background-color: aqua; */
+      margin-top: 4rem;
+      width:100%;
+      color: aliceblue;  
+      /*font-size: 2rem;*/
+      padding:3rem;
+        /* display:flex;
+      height:100%; 
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; */
+    }
+ </style>
+{% endblock style %}
+{% block highhome %}<a class="nav-link" href="/">Home <span class="sr-only"></span></a>{% endblock highhome %}
+{% block highabout %}<a class="nav-link active "  href="/About">About me</a>{% endblock highabout %}
+{% block highedu %}<a class="nav-link" href="/Education">Education</a>{% endblock highedu %}
+{% block highproj %} <a class="nav-link" href="/Projects">Projects</a>{% endblock highproj %}
+{% block highexp %}<a class="nav-link" href="/Experience">Experience</a>{% endblock highexp %}
+{% block highcont %}<a class="nav-link" href="/Contact">Contact me</a>{% endblock highcont %}
+{% block body %}
+ <body>
+     <!-- <img src="https://img.freepik.com/free-vector/luxury-design-background-abstract-moderns-vector_343694-2347.jpg" alt=""> -->
+     <div id="container">
+         <h1>About me</h1>
+          <p>
+             I'm Shivanya Dutta, a dedicated and driven individual with a profound passion for Computer Science. I embarked on my programming journey during my formative years, exploring languages like C++, Java, Python, and honing my skills in Database Management Systems and SQL. Currently pursuing my BTech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning, I actively engage in continuous learning through online courses, workshops, and coding competitions. With strong analytical and problem-solving skills, I thrive in dynamic and collaborative environments, always seeking to push the boundaries of technology and deliver innovative solutions.
+          </p>
+     </div>
+     
+ </body>
+{% endblock body %}

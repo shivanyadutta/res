@@ -1,0 +1,49 @@
+{% extends 'index.html'%}
+{% block title %}Contact me |{% endblock title %}
+{% block style %}
+img{
+    height: 500px;
+   }
+p{
+    font-size:20px;
+}
+
+{% endblock style %}
+{% block highhome %}<a class="nav-link" href="/">Home <span class="sr-only"></span></a>{% endblock highhome %}
+{% block highabout %}<a class="nav-link  "  href="/About">About me</a>{% endblock highabout %}
+{% block highedu %}<a class="nav-link" href="/Education">Education</a>{% endblock highedu %}
+{% block highproj %} <a class="nav-link" href="/Projects">Projects</a>{% endblock highproj %}
+{% block highexp %}<a class="nav-link" href="/Experience">Experience</a>{% endblock highexp %}
+{% block highcont %}<a class="nav-link active" href="/Contact">Contact me</a>{% endblock highcont %}
+{% block body%}
+<div class="container-fluid mx-0 px-0">
+    <img src="https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y=" class="d-block w-100  img-responsive" alt="">
+
+</div>
+<center>
+  <h1>
+    Contact me
+  </h1>
+</center>
+<div class="container" action="/Contact">
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Please enter your Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email">
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+  
+  <p>My email ID: shivanyadutta@gmail.com</p>
+</div>
+{% endblock body %}

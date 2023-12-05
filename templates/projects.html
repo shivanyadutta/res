@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+{% block title %}Project |{% endblock title %}
+{% block style %}
+body{
+    background-image: url("https://img.freepik.com/free-vector/dark-wavy-background-design_23-2148387887.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+@media screen and (max-width: 600px) {
+   .card mb-5 mt-5{
+    width: 18rem;
+   }
+}
+{% endblock style %}
+{% block highhome %}<a class="nav-link" href="/">Home <span class="sr-only"></span></a>{% endblock highhome %}
+{% block highabout %}<a class="nav-link"  href="/About">About me</a>{% endblock highabout %}
+{% block highedu %}<a class="nav-link" href="/Education">Education</a>{% endblock highedu %}
+{% block highproj %} <a class="nav-link active" href="/Projects">Projects</a>{% endblock highproj %}
+{% block highexp %}<a class="nav-link" href="/Experience">Experience</a>{% endblock highexp %}
+{% block highcont %}<a class="nav-link" href="/Contact">Contact me</a>{% endblock highcont %}
+{% block body  %}
+<center>
+    <div class="card mb-5 mt-5" style="width: 50rem;">
+        <img src="/static/portfolio.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">My Personal Portfolio Website(July 2023)</h5>
+          <p class="card-text">In the field of web development, this portfolio website is my first project. I made this using Django(a web framework in Python), HTML and CSS. This website has sections as folows- Home, About me, Resume, Education, Experience, Projects and Contact me</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+      <div class="card mb-5" style="width: 50rem;">
+        <img src="/static/projectjms.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jail Management System(January 2023)</h5>
+          <p class="card-text">This project was made by me when I was in class 12th using Python and Python-MySQL connectivity.
+            I also used Python's tKinter module to add a Graphic User Interface. In this project, I had included all CRUD operations.
+            Basically I have designed the system in such a way that two kinds of users can access this system- a Jailor and an Administrator.
+            A Jailor can only view the details of the prisoners of the Jail assigned to him/her, whereas an Administrator can view, update, delete and add prisoner details; an Administrator can do this for all the five jails- Pune Jail, Mumbai Jail, Nagpur Jail, Nashik Jail and Chakan JailThis project was made by me in class 12th using Python and Python-MySQL connectivity. I also used Python's tKinter module to add a Graphic User Interface. In this project, I had included all CRUD operations. Basically I have designed the system in such a way that two kinds of users can access this system- a Jailor and an Administrator. A Jailor can only view the details of the prisoners of the Jail assigned to him/her, whereas an Administrator can view, update, delete and add prisoner details; an Administrator can do this for all the five jails- Pune Jail, Mumbai Jail, Nagpur Jail, Nashik Jail and Chakan Jail.</p>
+          <a href="https://youtu.be/6YUe0uZn20M" target="_blank" class="btn btn-primary">Click to see this project's  video demonstration by me</a>
+        </div>
+      </div>
+      <div class="card mb-5" style="width: 50rem;">
+        <div class="card-body">
+          <h5 class="card-title">Airline Ticket Reservation System(September 2022)</h5>
+          <p class="card-text">I made this project without GUI, using Python when I was in Class 11th.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+</center>
+{% endblock body  %}
